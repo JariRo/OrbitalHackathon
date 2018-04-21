@@ -153,17 +153,21 @@ header > #getBack, #page3 > header > #getBack{
 }
 
 
-.sida1{
+.sida1 .nav-holder{
     width:100%;
     padding:10px;
 }
 
-.sida1 > h2{
+.sida1 > .nav-holder > h2{
     margin:0;
     color:#383839;
 }
+.sida1 > .nav-holder > h2:first-child{
+    margin-top:50px;
+    color:#383839;
+}
 
-.sida1 > .horizontal-nav {
+.sida1 > .nav-holder .horizontal-nav {
     background: #fff;
     height: 78px;
     overflow-y: hidden;
@@ -171,7 +175,7 @@ header > #getBack, #page3 > header > #getBack{
     border-radius: 3px;
 }
 
-.sida1 > .horizontal-nav > .nav-wrapper{
+.sida1 > .nav-holder .horizontal-nav > .nav-wrapper{
     white-space:nowrap;
     overflow-x:auto;
     -webkit-overflow-scrolling:touch;
@@ -179,11 +183,11 @@ header > #getBack, #page3 > header > #getBack{
     padding: 0 0 16px;
 }
 
-.sida1 > .horizontal-nav > .nav-wrapper > a{
+.sida1 > .nav-holder .horizontal-nav > .nav-wrapper > a{
     text-decoration: none;
 }
 
-.sida1 > .horizontal-nav > .nav-wrapper > a > .link{
+.sida1 > .nav-holder > .horizontal-nav > .nav-wrapper > a > .link{
     display:inline-block;
     border-radius: 3px;
     margin: 0 2px;
@@ -192,7 +196,7 @@ header > #getBack, #page3 > header > #getBack{
     text-align: center;
 }
 
-.sida1 > .horizontal-nav > .nav-wrapper > a > .nav-link {
+.sida1 > .nav-holder > .horizontal-nav > .nav-wrapper > a > .nav-link {
     color:#383839;
     font-family: 'avenir', sans-serif;
     font-size: 14px;
@@ -205,7 +209,7 @@ header > #getBack, #page3 > header > #getBack{
 
 }
 
-.sida1 > .horizontal-nav > .nav-wrapper > a > .nav-link.-active {
+.sida1 > .nav-holder > .horizontal-nav > .nav-wrapper > a > .nav-link.-active {
     color:#fafafa;
     font-weight: 500;
 
