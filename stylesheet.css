@@ -9,12 +9,16 @@ html, body{
     font-family: "avenir", sans-serif;
 }
 
-header {
+header, #page3 > header {
     width:100%;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+    position:relative;
+    z-index: 100;
 }
+
+
 
 header > #profile{
     margin:5px 10px 20px;
@@ -23,11 +27,73 @@ header > #profile{
     font-size: 36px;
 }
 
-header > #getBack{
+header > #getBack, #page3 > header > #getBack{
     margin:5px 10px 20px;
     text-decoration: none;
     color:#383839;
     font-size: 36px;
+}
+
+
+
+.nav-link#relax{
+    background:url('./images/Bilder_jari/sam-schooler-4824-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#stress{
+    background:url('./images/Bilder_jari/skystar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#relationship{
+    background:url('./images/Bilder_jari/rela.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#personalGrowth{
+    background:url('./images/Bilder_jari/personalGrowth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#ambient{
+    background:url('./images/Bilder_jari/andrew-haimerl-594067-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#nature{
+    background:url('./images/Bilder_jari/rene-bieder-101094-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#acoustic{
+    background:url('./images/Bilder_jari/ramiro-mendes-392727-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#waves{
+    background:url('./images/Bilder_jari/sam-schooler-4824-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#morning_shower{
+    background:url('./images/Bilder_jari/samuel-zeller-19361-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#after_workout{
+    background:url('./images/Bilder_jari/kyle-johnson-389070-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -79,6 +145,7 @@ header > #getBack{
     letter-spacing: 0.03em;
     line-height: 78px;
     padding:0 24px;
+    color:#fff;
 
 }
 
@@ -128,7 +195,6 @@ header > #getBack{
   border-color: transparent transparent transparent #FFF;
 
 }
-
 
 
 .sida2-play:hover {
