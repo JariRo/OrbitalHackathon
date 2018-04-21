@@ -40,9 +40,13 @@
   border-color: transparent transparent transparent #FFF;
 
 }
+.triangle {
+  stroke-dasharray: 280;
 
+  stroke: #fff;
+  transform: translate(-3px, -10px);
 
-
+}
 .sida2-play:hover {
   cursor: pointer;
 }
