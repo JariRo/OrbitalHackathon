@@ -353,6 +353,134 @@ h2 {
   margin-top: 200px;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+
+#page3 #cancelBt{
+    font-weight: 400 !important;
+    color:#383839 !important;
+    text-decoration: none !important;
+    font-size: 0.8em !important;
+}
+
+#wrapper.feedback{
+    width:100%;
+}
+
+#wrapper.feedback img{
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#wrapper.feedback h2{
+    text-align: center;
+}
+
+#wrapper.feedback h3{
+    text-align: center;
+}
+
+#wrapper.feedback #feedbackText{
+    text-align: center;
+}
+
+#wrapper.feedback input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 10%;
+  width: 80%;
+}
+#wrapper.feedback #endSession{
+    position:absolute;
+    bottom:0;
+    width:40%;
+    background:#383839;
+    padding:10px;
+    border-radius: 23px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 27%;
+    margin-right: 27%;
+}
+#wrapper.feedback input[type=range]:focus {
+  outline: none;
+}
+#wrapper.feedback input[type=range]::-webkit-slider-runnable-track {
+  width: 70%;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  background:rgba(56, 56, 57, 0.2);
+  border-radius: 1.3px;
+  border: 0.2px solid #383839;
+}
+#wrapper.feedback input[type=range]::-webkit-slider-thumb {
+  border: 1px solid #383839;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  background: #383839;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+#wrapper.feedback input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #383839;
+}
+#wrapper.feedback input[type=range]::-moz-range-track {
+  width: 70%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #3;
+  border-radius: 1.3px;
+  border: 0.2px solid #383839;
+}
+#wrapper.feedback input[type=range]::-moz-range-thumb {
+  border: 1px solid #383839;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+#wrapper.feedback input[type=range]::-ms-track {
+  width: 70%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+#wrapper.feedback input[type=range]::-ms-fill-lower {
+  background: #383839;
+  border: 0.2px solid #383839;
+  border-radius: 2.6px;
+}
+#wrapper.feedback input[type=range]::-ms-fill-upper {
+  background: #383839;
+  border: 0.2px solid #383839;
+  border-radius: 2.6px;
+}
+#wrapper.feedback input[type=range]::-ms-thumb {
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+#wrapper.feedback input[type=range]:focus::-ms-fill-lower {
+  background: #383839;
+}
+#wrapper.feedback input[type=range]:focus::-ms-fill-upper {
+  background: #383839;
+}
+
 #page5 {
   margin: 50px;
 }
