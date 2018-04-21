@@ -9,6 +9,12 @@
   margin-right: auto;
 }
 
+.play-html {
+  position: relative;
+  height: 100%;
+  top: 250px;
+}
+
 .sida2-play {
   position: relative;
   text-align: center;
@@ -17,7 +23,7 @@
   background-color: black;
   width: 100px;
   height: 100px;
-  top: 60%;
+
   border-radius: 50%;
   box-shadow: 0px 0px 10px black;
 }
@@ -40,17 +46,13 @@
   border-color: transparent transparent transparent #FFF;
 
 }
+.triangle {
+  stroke-dasharray: 280;
 
+  stroke: #fff;
+  transform: translate(-3px, -10px);
 
-
-.sida2-play:hover {
-  cursor: pointer;
 }
-
-@media screen and (max-width: 992px) {
-  #wrapper {
-    width: 100%;
-  }
 
 *{
     box-sizing: border-box;
@@ -62,31 +64,105 @@ html, body{
     font-family: "avenir", sans-serif;
 }
 
-
-#sida1{
-    width:100%;
-    padding:10px;
-}
-
-#sida1 > header {
+header, #page3 > header {
     width:100%;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+    position:relative;
+    z-index: 100;
 }
 
-#sida1 > header > #profile{
+
+
+header > #profile{
     margin:5px 10px 20px;
     text-decoration: none;
     color:#383839;
+    font-size: 36px;
 }
 
-#sida1 > h2{
+header > #getBack, #page3 > header > #getBack{
+    margin:5px 10px 20px;
+    text-decoration: none;
+    color:#383839;
+    font-size: 36px;
+}
+
+
+
+.nav-link#relax{
+    background:url('./images/Bilder_jari/sam-schooler-4824-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#stress{
+    background:url('./images/Bilder_jari/skystar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#relationship{
+    background:url('./images/Bilder_jari/rela.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#personalGrowth{
+    background:url('./images/Bilder_jari/personalGrowth.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#ambient{
+    background:url('./images/Bilder_jari/andrew-haimerl-594067-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#nature{
+    background:url('./images/Bilder_jari/rene-bieder-101094-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#acoustic{
+    background:url('./images/Bilder_jari/ramiro-mendes-392727-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#waves{
+    background:url('./images/Bilder_jari/sam-schooler-4824-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#morning_shower{
+    background:url('./images/Bilder_jari/samuel-zeller-19361-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-link#after_workout{
+    background:url('./images/Bilder_jari/kyle-johnson-389070-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sida1{
+    width:100%;
+    padding:10px;
+}
+
+.sida1 > h2{
     margin:0;
     color:#383839;
 }
 
-#sida1 > .horizontal-nav {
+.sida1 > .horizontal-nav {
     background: #fff;
     height: 78px;
     overflow-y: hidden;
@@ -94,7 +170,7 @@ html, body{
     border-radius: 3px;
 }
 
-#sida1 > .horizontal-nav > .nav-wrapper{
+.sida1 > .horizontal-nav > .nav-wrapper{
     white-space:nowrap;
     overflow-x:auto;
     -webkit-overflow-scrolling:touch;
@@ -102,20 +178,20 @@ html, body{
     padding: 0 0 16px;
 }
 
-#sida1 > .horizontal-nav > .nav-wrapper > a{
+.sida1 > .horizontal-nav > .nav-wrapper > a{
     text-decoration: none;
 }
 
-#sida1 > .horizontal-nav > .nav-wrapper > a > .link{
+.sida1 > .horizontal-nav > .nav-wrapper > a > .link{
     display:inline-block;
     border-radius: 3px;
     margin: 0 2px;
     border:1px solid rgba(0,0,0, 0.6);
-    min-width: 36%;
+    min-width: 33%;
     text-align: center;
 }
 
-#sida1 > .horizontal-nav > .nav-wrapper > a > .nav-link {
+.sida1 > .horizontal-nav > .nav-wrapper > a > .nav-link {
     color:#383839;
     font-family: 'avenir', sans-serif;
     font-size: 14px;
@@ -124,13 +200,26 @@ html, body{
     letter-spacing: 0.03em;
     line-height: 78px;
     padding:0 24px;
+    color:#fff;
 
 }
 
-#sida1 > .horizontal-nav > .nav-wrapper > a > .nav-link.-active {
+.sida1 > .horizontal-nav > .nav-wrapper > a > .nav-link.-active {
     color:#fafafa;
     font-weight: 500;
 
+}
+
+
+
+
+.sida2-play:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  #wrapper {
+    width: 100%;
 }
 
 
@@ -233,4 +322,28 @@ html, body{
   font-weight: 100;
   margin-top: 200px;
   font-family: 'Roboto Condensed', sans-serif;
+}
+#page5 {
+  margin: 50px;
+}
+#page5 > #back-button {
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+}
+#page5 > #back-button:visited {
+  color: #000;
+}
+#page5 > h1 {
+  font-weight: 100;
+  font-size: 72px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#page5 > img {
+  width: 100%;
+}
+#page5 > h2 {
+  font-weight: 100;
+  font-size: 64px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
