@@ -1,7 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 
 
 #wrapper {
-  height: 90vh;
+  height: 100vh;
   width : 25%;
   padding: 2%;
   position: relative;
@@ -64,13 +69,29 @@ html, body{
     font-family: "avenir", sans-serif;
 }
 
-header, #page3 > header {
-    right: 0;
-    margin-top: 0.83em;
+#getBack {
+  position: fixed;
+  right: 0;
+  margin-top: 0.83em;
+}
+
+.sida1 > header {
+  position: relative;
+  height: 36px;
+}
+
+#profile {
+  right: 0;
+  position: fixed;
+  margin-bottom: 0.83em;
+}
+
+#page3 > header {
+
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-    position:fixed;
+    position:relative;
     z-index: 100;
 }
 
@@ -156,6 +177,14 @@ header > #getBack, #page3 > header > #getBack{
 .sida1{
     width:100%;
     padding:10px;
+}
+
+h2 {
+  text-shadow: 1px 1px 1px #d3d3d3;
+}
+
+.nav-link {
+  box-shadow: 1px 1px 5px #d3d3d3;
 }
 
 .sida1 > h2{
