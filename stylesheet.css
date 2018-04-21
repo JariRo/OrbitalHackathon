@@ -65,11 +65,12 @@ html, body{
 }
 
 header, #page3 > header {
-    width:100%;
+    right: 0;
+    margin-top: 0.83em;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-    position:relative;
+    position:fixed;
     z-index: 100;
 }
 
@@ -324,6 +325,7 @@ header > #getBack, #page3 > header > #getBack{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 #page3 #cancelBt{
     font-weight: 400 !important;
     color:#383839 !important;
@@ -448,4 +450,29 @@ header > #getBack, #page3 > header > #getBack{
 }
 #wrapper.feedback input[type=range]:focus::-ms-fill-upper {
   background: #383839;
+}
+
+#page5 {
+  margin: 50px;
+}
+#page5 > #back-button {
+  font-size: 50px;
+  text-decoration: none;
+  color: #000;
+}
+#page5 > #back-button:visited {
+  color: #000;
+}
+#page5 > h1 {
+  font-weight: 100;
+  font-size: 72px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#page5 > img {
+  width: 100%;
+}
+#page5 > h2 {
+  font-weight: 100;
+  font-size: 64px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
